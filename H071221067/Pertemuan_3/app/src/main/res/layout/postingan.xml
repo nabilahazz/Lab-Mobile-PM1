@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:paddingBottom="8dp">
+
+    <!-- Avatar dan Username -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="8dp">
+
+        <!-- Avatar -->
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/post_avatar"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:src="@drawable/liyue"
+            android:scaleType="centerCrop"
+            android:layout_marginEnd="8dp"
+            app:civ_border_width="1dp"
+            app:civ_border_color="@drawable/color"/>
+
+        <!-- Username -->
+        <TextView
+            android:id="@+id/post_username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="username"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_gravity="center_vertical"/>
+    </LinearLayout>
+
+    <!-- Gambar Postingan -->
+    <ImageView
+        android:id="@+id/post_image"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="centerCrop"
+        android:adjustViewBounds="true"
+        android:src="@drawable/ic_launcher_background"
+        android:layout_marginBottom="8dp"/>
+
+    <!-- Tombol Like dan Komentar -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="8dp">
+
+        <!-- Tombol Like -->
+        <ImageView
+            android:id="@+id/image_like"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/heart"/>
+
+        <!-- Tombol Komentar -->
+        <ImageView
+            android:id="@+id/image_comment"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/chat"
+            android:layout_marginStart="16dp"/>
+    </LinearLayout>
+
+    <!-- Jumlah Like -->
+    <TextView
+        android:id="@+id/post_likes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="100 likes"
+        android:textSize="14sp"
+        android:textColor="@android:color/black"
+        android:paddingStart="8dp"/>
+
+    <!-- Deskripsi Postingan -->
+    <TextView
+        android:id="@+id/post_caption"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Deskripsi Postingan..."
+        android:textSize="14sp"
+        android:paddingStart="8dp"
+        android:paddingTop="4dp"/>
+
+    <!-- Waktu Postingan -->
+    <TextView
+        android:id="@+id/post_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1 hour ago"
+        android:textSize="12sp"
+        android:paddingStart="8dp"
+        android:paddingTop="4dp"/>
+</LinearLayout>
