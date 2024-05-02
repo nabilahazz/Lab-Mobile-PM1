@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    android:layout_marginBottom="9dp">
+
+    <LinearLayout
+        android:id="@+id/userItem"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/rectangle"
+        android:layout_marginHorizontal="9dp"
+        android:orientation="horizontal">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/pfp"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/ic_launcher_background"
+            android:layout_marginStart="12dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/nama"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="13sp"
+                android:fontFamily="@font/sf_ui_display_bold"
+                android:text="nama"
+                android:layout_marginLeft="12dp"/>
+
+            <TextView
+                android:id="@+id/email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="13sp"
+                android:fontFamily="@font/sf_ui_display_medium"
+                android:textColor="@color/grey"
+                android:text="email"
+                android:layout_marginLeft="12dp"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
