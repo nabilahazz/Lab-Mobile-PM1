@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.PostinganFragment"
+    android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:id="@+id/rv_header"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:background="@color/white">
+
+        <TextView
+            android:id="@+id/tv_profile"
+            android:layout_width="335dp"
+            android:layout_height="40dp"
+            android:text="Add Post"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="20dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginHorizontal="20dp">
+
+        <ImageView
+            android:id="@+id/iv_gambar"
+            android:layout_width="match_parent"
+            android:layout_height="270dp"
+            android:src="@drawable/camera_icon"
+            android:layout_gravity="center_horizontal"
+            android:paddingVertical="50dp"/>
+
+        <TextView
+            android:id="@+id/tv_konten"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Description"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="50dp"/>
+
+
+        <EditText
+            android:id="@+id/et_konten"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:hint="Description" />
+
+
+        <Button
+            android:id="@+id/btn_posting"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center_horizontal"
+            android:backgroundTint="@color/white"
+            android:text="Add Post"
+            android:textColor="@color/black"
+            android:textSize="20sp"/>
+    </LinearLayout>
+
+
+</LinearLayout>
